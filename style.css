@@ -341,7 +341,12 @@ header::-webkit-scrollbar-thumb:hover {
     position: relative;
     /* z-index: 2; */
 }
-
+.heroLogo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 .heroSection .heroText h1 {
     color: #fff;
     font-family: 'Poppins';
