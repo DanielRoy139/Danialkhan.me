@@ -460,7 +460,7 @@ ul li::before {
     content: '✓';
     position: absolute;
     left: 8px;
-    font-weight: 900;
+/*     font-weight: 900; */
     color: #ff9900;
 }
 
