@@ -343,8 +343,8 @@ header::-webkit-scrollbar-thumb:hover {
 }
 .heroLogo {
     position: absolute;
-    top: 0;
-    left: 0;
+     top: -30px;
+    left: -30px;
     z-index: 1;
 }
 .heroSection .heroText h1 {
