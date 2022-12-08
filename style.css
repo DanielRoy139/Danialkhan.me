@@ -405,7 +405,7 @@ header::-webkit-scrollbar-thumb:hover {
     width: 100%;
     left: 0;
     text-align: center;
-    color: #dbd8d8;
+    color: #fff;
     background: rgb(5 13 24 / 35%);
     font-size: 22px;
     font-family: 'Poppins';
