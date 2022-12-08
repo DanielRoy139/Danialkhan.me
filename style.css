@@ -881,6 +881,12 @@ button.btn-close {
     .modal.show .modal-dialog {
         max-width: 100%;
     }
+    .aboutContent {
+        padding-top: 20px;
+    }
+    section {
+        padding:30px 0px;
+    }
 }
 
 @media screen and (max-width:480px) {
