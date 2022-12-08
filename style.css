@@ -451,12 +451,12 @@ header::-webkit-scrollbar-thumb:hover {
 section.skillSection {
     background: #f5f8fd;
 }
-ul.skill-List {
+ul {
     list-style: none;
     position: relative;
 }
 
-ul.skill-List li::before {
+ul li::before {
     content: '✓';
     position: absolute;
     left: 8px;
@@ -564,8 +564,9 @@ svg.radial-progress text.countervalue {
 }
 
 .resumeLeft .resumeInner .resumeList ul {
-    /* padding-left: 15px; */
     padding-top: 15px;
+    list-style: none;
+    position: relative;
 }
 
 .resumeLeft .resumeInner .resumeList ul li {
