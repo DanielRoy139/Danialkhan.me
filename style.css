@@ -392,6 +392,25 @@ header::-webkit-scrollbar-thumb:hover {
 }
 
 /* main section  */
+.section-Img {
+    position: relative;
+}
+
+.section-Img::before {
+    content: 'DANIAL KHAN';
+    position: absolute;
+    top: 45%;
+    display: block;
+    height: 50px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    color: #dbd8d8;
+    background: rgb(5 13 24 / 35%);
+    font-size: 22px;
+    font-family: 'Poppins';
+    line-height: 47px;
+}
 .mainSection .aboutContent .section-title h2 {
     font-weight: 600;
     font-size: 23px;
