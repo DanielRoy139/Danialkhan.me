@@ -342,12 +342,11 @@ header::-webkit-scrollbar-thumb:hover {
     /* z-index: 2; */
 }
 .heroLogo {
-    position: absolute;
-     top: -30px;
-    left: -30px;
+  position: absolute;
+    top: -60px;
+    left: -20px;
     z-index: 1;
-    width: 300px;
-    height: 300px;
+    width: 200px;
     display:none;
 }
 .heroSection .heroText h1 {
