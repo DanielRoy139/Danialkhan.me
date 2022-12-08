@@ -451,7 +451,23 @@ header::-webkit-scrollbar-thumb:hover {
 section.skillSection {
     background: #f5f8fd;
 }
+ul.skill-List {
+    list-style: none;
+    position: relative;
+}
 
+ul.skill-List li::before {
+    content: '✓';
+    position: absolute;
+    left: 8px;
+    font-weight: 900;
+    color: #ff9900;
+}
+
+ul.skill-List li {
+    padding: 5px 0px;
+    font-family: 'Poppins';
+}
 /*Required CSS*/
 .progreesText {
     padding-top: 31px;
