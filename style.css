@@ -267,7 +267,9 @@ header::-webkit-scrollbar-thumb:hover {
 .navigation nav.navbar ul li {
     padding-bottom: 30px;
 }
-
+.navigation nav.navbar ul li::before {
+    display:none;
+}
 .navigation nav.navbar ul li a {
     text-decoration: none;
     color: #a8a9b4;
@@ -403,7 +405,9 @@ header::-webkit-scrollbar-thumb:hover {
 .aboutDetail ul li {
     padding: 10px 0px;
 }
-
+.aboutDetail ul li::before {
+    display: none;
+}
 .aboutDetail ul li span:first-child {
     color: #ff9900;
     padding-right: 5px;
@@ -606,7 +610,9 @@ section.portfolioSection ul.nav-tabs {
     padding: 0px 20px;
     border-radius: 20px;
 }
-
+section.portfolioSection ul.nav-tabs li::before {
+    display:none;
+}
 section.portfolioSection ul.nav-tabs li button.nav-link:hover {
     color: #fe9c00;
 }
