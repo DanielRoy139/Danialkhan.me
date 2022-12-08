@@ -887,8 +887,16 @@ button.btn-close {
     section {
         padding:30px 0px;
     }
+    .counterWrapper .countText h2 {
+        font-size: 35px;
+    }
 }
 
+@media screen and (max-width:575px){
+    .counterWrapper .countText h2 {
+        font-size:30px;
+    }
+}
 @media screen and (max-width:480px) {
 
     .carousel-control-next-icon,
