@@ -919,7 +919,6 @@ button.btn-close {
     .modal-body img {
         width: 100%;
     }
-
     .modal.show .modal-dialog {
         max-width: 100%;
     }
@@ -931,6 +930,9 @@ button.btn-close {
     }
     .counterWrapper .countText h2 {
         font-size: 35px;
+    }
+    .aboutDetail ul {
+        margin:0;
     }
 }
 
