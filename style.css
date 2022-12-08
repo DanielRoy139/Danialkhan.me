@@ -1,0 +1,912 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Oswald;
+    /* src: url(../fonts/static/Oswald-Regular.ttf); */
+    src: url(./static/Oswald-Regular.ttf);
+}
+
+@font-face {
+    font-family: Oswald-light;
+    /* src: url(../fonts/static/Oswald-Light.ttf); */
+    src: url(./static/Oswald-Light.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/poppins/Poppins-Regular.ttf);
+    src: url(./poppins/Poppins-Regular.ttf);
+}
+
+.modal.show .modal-dialog {
+    max-width: 90%;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 16px;
+    color: #000;
+    font-family: 'Poppins';
+}
+
+a.ScrollUpWrap {
+    position: fixed;
+    z-index: 20;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateX(50px) rotate(-90deg);
+    transition: .4s;
+    font-size: 14px;
+    zoom: 1.01;
+    font-weight: 700;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    background: #ff9900;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+a.ScrollUpWrap .scrollUpArrow {
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    z-index: 1;
+    width: 0;
+    height: 2px;
+    transition: .4s;
+    transition-delay: .4s;
+    background: #f36c7b;
+}
+
+a.ScrollUpWrap .scrollUpText {
+    display: block;
+    transform: translateX(0);
+    transition: .4s;
+    font-size: 16px;
+    color: #fff;
+    transition-delay: .4s;
+}
+
+.navigationBtn {
+    position: relative;
+    display: none;
+}
+
+.navigationBtn button.navBtn {
+    position: fixed;
+    right: 20px;
+    z-index: 2;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #ff9900;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+.navigationBtn button.navBtn.closeBtn {
+    display: none;
+}
+
+.leftSpace {
+    margin-left: 300px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    /* margin-bottom: 20px;
+    padding-bottom: 20px; */
+    position: relative;
+    font-family: 'Poppins';
+    color: #FF9900;
+}
+
+.section-title p {
+    font-size: 16px;
+    color: #000;
+    font-family: 'Poppins';
+    line-height: 30px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    overflow: auto;
+    padding: 15px;
+    background: #000;
+    z-index: 1;
+    transition: .3s;
+}
+
+header .profileWrapper .profile img {
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+    border: 8px solid #2c2f3f;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+header .profileWrapper .profileText a {
+    text-align: center;
+    text-decoration: none;
+    font-family: Oswald-light;
+    color: #fff;
+}
+
+header .profileWrapper .profileText a h1 {
+    padding: 10px 0px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+header .profileWrapper .profile .socialIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .profileWrapper .profile .socialIcons a {
+    background: #212431;
+    margin: 0 5px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    transition: .3s;
+}
+
+header .profileWrapper .profile .socialIcons a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.navigation {
+    overflow: auto;
+    padding-bottom: 50px;
+}
+
+header::-webkit-scrollbar {
+    width: 5px;
+}
+
+header::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+header::-webkit-scrollbar-thumb {
+    background: #f90;
+}
+
+header::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 153, 0, 0.637);
+}
+
+.navigation nav.navbar ul {
+    list-style: none;
+    padding-top: 30px;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.navigation nav.navbar ul.dropdown-content {
+    padding-left: 34px;
+    display: none;
+    transition: .3s;
+}
+
+@keyframes rotateMenu {
+    0% {
+        opacity: 0;
+        transform: rotateX(-90deg);
+    }
+
+    50% {
+        transform: rotateX(-20deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+}
+
+.navigation nav.navbar ul.dropdown-content li:last-child {
+    padding-bottom: 0;
+}
+
+.navigation nav.navbar ul.dropdown-content li a {
+    color: #ff9900;
+    transition: .3s;
+}
+
+.navigation nav.navbar ul.dropdown-content li a:hover {
+    color: #fff;
+}
+
+.navigation nav.navbar ul li:hover>ul.dropdown-content {
+    display: block;
+    animation: rotateMenu 400ms ease-in-out forwards
+}
+
+.navigation nav.navbar ul li {
+    padding-bottom: 30px;
+}
+
+.navigation nav.navbar ul li a {
+    text-decoration: none;
+    color: #a8a9b4;
+    font-family: Poppins;
+    text-transform: uppercase;
+    transition: .3s;
+    display: block;
+}
+
+.navigation nav.navbar ul li a.active {
+    color: #fff;
+}
+
+.navigation nav.navbar ul li a.active span:first-child {
+    color: #FF9900;
+}
+
+.navigation nav.navbar ul li a span {
+    font-size: 16px;
+}
+
+.navigation nav.navbar ul li a span.angleRight {
+    float: right;
+    line-height: 25px;
+    font-size: 22px;
+}
+
+.navigation nav.navbar ul li a span:first-child {
+    font-size: 20px;
+    transition: .3s;
+    width: 30px;
+}
+
+.navigation nav.navbar ul li a:hover span:first-child {
+    color: #FF9900;
+}
+
+.navigation nav.navbar ul li a:hover span {
+    color: #fff;
+}
+
+/* hero section  */
+.heroSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-image: url(./hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.heroSection:before {
+    content: "";
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.heroSection .heroText {
+    position: relative;
+    /* z-index: 2; */
+}
+
+.heroSection .heroText h1 {
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.heroSection .heroText h3 {
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Oswald-light';
+    letter-spacing: 3px;
+}
+
+.heroSection .heroText h3 .typed-text {
+    color: #FF9900;
+}
+
+.heroSection .heroText h3 span.cursor {
+    display: inline-block;
+    background-color: #fff;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 3s infinite;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #ccc;
+    }
+
+    49% {
+        background-color: #ccc;
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    99% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: #ccc;
+    }
+}
+
+/* main section  */
+.mainSection .aboutContent .section-title h2 {
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.aboutDetail ul {
+    padding: 0;
+    list-style: none;
+}
+
+.aboutDetail ul li {
+    padding: 10px 0px;
+}
+
+.aboutDetail ul li span:first-child {
+    color: #ff9900;
+    padding-right: 5px;
+    font-family: 'Font Awesome 5 Pro';
+}
+
+.aboutDetail ul li span {
+    font-family: 'Poppins';
+}
+
+.counterWrapper {
+    display: flex;
+}
+
+.counterWrapper .countIcon {
+    padding-right: 10px;
+}
+
+.counterWrapper .countIcon i {
+    color: #ff9900;
+    display: block;
+    font-size: 44px;
+}
+
+.counterWrapper .countIcon svg {
+    width: 40px;
+    height: 40px;
+    fill: #ff9900;
+}
+
+.counterWrapper .countText h2 {
+    font-size: 48px;
+    line-height: 40px;
+    display: block;
+    font-weight: 700;
+    color: #050d18;
+}
+
+.counterWrapper .countText p {
+    color: #837777;
+    font-size: 14px;
+    padding-top: 8px;
+}
+
+section.skillSection {
+    background: #f5f8fd;
+}
+
+/*Required CSS*/
+.progreesText {
+    padding-top: 31px;
+}
+
+svg.radial-progress {
+    height: auto;
+    max-width: 240px;
+    padding: 0;
+    transform: rotate(-90deg);
+    width: 100%;
+}
+
+svg.radial-progress circle {
+    fill: transparent;
+    stroke: #fff;
+    stroke-width: 10px;
+}
+
+svg.radial-progress circle.bar-static {
+    stroke: #fff
+}
+
+svg.radial-progress circle.bar--animated {
+    stroke-dasharray: 219.91148575129;
+    stroke: #f90;
+    stroke-dashoffset: 219.91148575129;
+    stroke-width: 5px;
+}
+
+svg.radial-progress text.countervalue {
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 700;
+    text-anchor: middle;
+}
+
+.svg-container {
+    text-align: center;
+}
+
+.svg-container .row {
+    justify-content: center;
+}
+
+.progreesText h2 {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Poppins';
+    font-style: italic;
+}
+
+/* Resume section  */
+
+.resumeLeft .resumeInner {
+    position: relative;
+    border-left: 2px solid #ff9900;
+    padding: 0 0 20px 20px;
+}
+
+.resumeLeft .resumeInner:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -8px;
+    border-radius: 50px;
+    border: 2px solid #ff9900;
+    background: white;
+}
+
+.resumeLeft .resumeTitle h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #050d18;
+}
+
+.resumeLeft .resumeInner .resumeHead {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #050d18;
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+}
+
+.resumeLeft .resumeInner .resumeItalic {
+    color: #a3a3a3;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.resumeLeft .resumeInner .resumeList ul {
+    /* padding-left: 15px; */
+    padding-top: 15px;
+}
+
+.resumeLeft .resumeInner .resumeList ul li {
+    padding: 5px 0px;
+    font-size: 16px;
+    font-family: 'Poppins';
+}
+
+.resumeLeft .resumeInner .resumePara {
+    font-size: 16px;
+    line-height: 30px;
+    padding-top: 10px;
+    font-family: 'Poppins';
+}
+
+.resumeLeft .resumeInner .resumeDate {
+    display: inline-block;
+    background: #ffca6b;
+    padding: 6px 12px;
+    color: #fff;
+    font-family: 'Poppins';
+    margin: 10px 0px;
+    border-radius: 4px;
+}
+
+/* portfolio section  */
+section.portfolioSection {
+    background: #f5f8fd;
+}
+
+section.portfolioSection ul.nav-tabs {
+    justify-content: center;
+    border: none;
+    background: #fff;
+    width: auto;
+    margin: 0 auto;
+    padding: 0px 20px;
+    border-radius: 20px;
+}
+
+section.portfolioSection ul.nav-tabs li button.nav-link:hover {
+    color: #fe9c00;
+}
+
+section.portfolioSection ul.nav-tabs li button.nav-link.active {
+    border-color: #fff;
+    color: #fe9c00;
+}
+
+section.portfolioSection ul.nav-tabs li button:hover {
+    border-color: #fff;
+}
+
+section.portfolioSection .portfolioImg {
+    margin: 40px 0px;
+    position: relative;
+}
+
+section.portfolioSection .portfolioImg img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+section.portfolioSection .portfolioImg .profolioOverlay {
+    background: #ff9929;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    position: absolute;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    justify-content: center;
+    transform: translateY(20px);
+    opacity: 0;
+}
+
+section.portfolioSection .portfolioImg:hover .profolioOverlay {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+section.portfolioSection .portfolioImg .profolioOverlay button.portfolioBtn {
+    width: 49%;
+    border: none;
+    background: #ff9929;
+    padding: 10px 0px;
+    font-size: 20px;
+    border-right: 1px solid #d1c1c1;
+    transition: all ease-in-out 0.3s;
+}
+
+section.portfolioSection .portfolioImg .profolioOverlay button.portfolioBtn:hover {
+    color: #fff;
+}
+
+section.portfolioSection .portfolioImg .profolioOverlay button.portfolioBtn:last-child {
+    border: none;
+}
+
+section.portfolioSection ul.nav-tabs li button.nav-link {
+    color: #000;
+    font-family: 'Poppins';
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+}
+
+section.portfolioSection .portfolioImg .bgOverlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: black;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+section.portfolioSection .portfolioImg:hover .bgOverlay {
+    opacity: 0.5;
+}
+
+.tab-content>.active .portfolioImg {
+    animation: zoom-in 1s ease;
+    transform: scale(1, 1);
+}
+
+/* service section  */
+.serviceCard {
+    display: flex;
+}
+
+.serviceCard:hover .serviceIcon i {
+    color: #ff9900;
+    background: #fff;
+    border: 1px solid #ff9900;
+}
+
+.serviceCard .serviceIcon {
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.serviceCard .serviceIcon i {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff9900;
+    border: 1px solid #ff9900;
+    transition: .3s;
+    color: #fff;
+    border-radius: 50px;
+    font-size: 22px;
+}
+
+.serviceCard .serviceTxt a {
+    text-decoration: none;
+    font-family: 'Poppins';
+    color: #000;
+}
+
+.serviceCard .serviceTxt a h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.serviceCard .serviceTxt p {
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+/* contact section  */
+section.contactSection {
+    background: #f5f8fd;
+}
+
+.contactText {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.contactText .contactIcon {
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.contactText .contactIcon i {
+    width: 50px;
+    height: 50px;
+    background: #ff9900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.contactText .contactMedia h5 {
+    font-size: 18px;
+    font-family: 'Poppins';
+}
+
+.contactText .contactMedia h3 {
+    font-size: 20px;
+    font-family: 'Poppins';
+}
+
+/* footer section  */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    bottom: 0;
+    width: 300px;
+}
+
+footer .footerWrap p {
+    color: #fff;
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+footer .footerWrap p a {
+    text-decoration: none;
+    color: #f90;
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(0, 0);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.modal-dialog .modal-content {
+    text-align: center;
+    background: none;
+    border: none;
+}
+
+.modal-content .modal-header {
+    border-bottom: none;
+}
+
+.modal-body {
+    background: none;
+}
+
+.modal-body img {
+    width: 60%;
+}
+
+button.carousel-control-prev {
+    width: 30px;
+    opacity: 1;
+    height: 30px;
+    top: 50%;
+}
+
+button.carousel-control-next {
+    width: 30px;
+    opacity: 1;
+    height: 30px;
+    top: 50%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 2rem !important;
+    height: 3rem !important;
+    border: 2px solid #fff;
+    background: black;
+}
+
+button.btn-close {
+    background-color: white;
+    opacity: 1;
+}
+
+.modal.fade.show .carousel-item:first-child img {
+    animation: zoom-in 1s ease;
+    transform: scale(1, 1);
+}
+
+@media screen and (max-width:1199px) {
+    header {
+        width: 0;
+        padding: 0;
+        transition: .3s;
+    }
+
+    .leftSpace {
+        margin-left: 0;
+    }
+
+    .navigationBtn {
+        display: block;
+    }
+
+    footer {
+        position: inherit;
+        width: 100%;
+    }
+
+    .navigation {
+        height: 100%;
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .modal-body img {
+        width: 100%;
+    }
+
+    .modal.show .modal-dialog {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        width: 1rem !important;
+        height: 2rem !important;
+    }
+    body .heroSection {
+        background-image: url(./hero-bg-1.jpg);
+        background-position: inherit;
+    }
+    .heroSection .heroText h1 {
+        font-size: 40px;
+    }
+
+    .contactText {
+        display: block;
+    }
+
+    .serviceCard {
+        display: block;
+    }
+
+    .heroSection {
+        background-position: 80%;
+    }
+}
