@@ -985,6 +985,9 @@ button.btn-close {
     .heroLogo {
         display:block;
     }
+    .formLeft {
+        padding:30px 10px 5px;
+    }
 }
 
 @media screen and (max-width:575px){
