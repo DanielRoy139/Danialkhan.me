@@ -822,7 +822,17 @@ section.contactSection {
 .formRight .formText h2 {
     color: #fff;
     font-family: 'Poppins';
+    display:inline-block;
 }
+.formRight .formText .formLogo{
+    display:inline-block;
+    margin-left: -25px;
+}
+.formRight .formText .formLogo img {
+    width:100px;
+    height:100px;
+    object-fit:contain;
+ }
 section.contactSection form .form-control {
     box-shadow: none;
     margin: 20px 0px 10px;
