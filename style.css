@@ -145,6 +145,7 @@ header {
     padding: 15px;
     background-image:url(./night-Sea.jpg);
     background-repeat:no-repeat;
+    background-size:cover;
 /*     background: #000; */
     z-index: 1;
     transition: .3s;
