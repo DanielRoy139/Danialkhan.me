@@ -172,6 +172,8 @@ header .profileWrapper .profileText a h1 {
     padding: 10px 0px;
     font-size: 24px;
     color:#FF9900;
+    background: #00000075;
+    margin-top: 10px;
     text-transform: uppercase;
 }
 
