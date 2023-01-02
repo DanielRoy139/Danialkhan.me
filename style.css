@@ -143,11 +143,7 @@ header {
     width: 300px;
     overflow: auto;
     padding: 15px;
-    background-image:url(./building.jpg);
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-size:cover;
-/*     background: #000; */
+    background: #000;
     z-index: 1;
     transition: .3s;
 }
@@ -171,9 +167,6 @@ header .profileWrapper .profileText a {
 header .profileWrapper .profileText a h1 {
     padding: 10px 0px;
     font-size: 24px;
-    color:#FF9900;
-    background: #00000075;
-    margin-top: 10px;
     text-transform: uppercase;
 }
 
