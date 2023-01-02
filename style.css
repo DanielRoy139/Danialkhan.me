@@ -143,6 +143,8 @@ header {
     width: 300px;
     overflow: auto;
     padding: 15px;
+    background-image:url(./night-Sea.jpg);
+    background-repeat:no-repeat;
     background: #000;
     z-index: 1;
     transition: .3s;
