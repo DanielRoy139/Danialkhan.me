@@ -1036,28 +1036,3 @@ button.btn-close {
         background-position: 80%;
     }
 }
-
-.reveal{
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 1s all ease;
-}
-
-.reveal.active{
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.topAnimate {
-  position: relative;
-  transform: translateY(-100px);
-  opacity: 0;
-  transition: 1s all ease;
-}
-
-.topAnimate.active{
-  transform: translateY(0);
-  opacity: 1;
-}
-
