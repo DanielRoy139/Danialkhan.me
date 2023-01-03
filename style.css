@@ -354,6 +354,8 @@ header::-webkit-scrollbar-thumb:hover {
     font-size: 64px;
     font-weight: 700;
     line-height: 56px;
+    display: flex;
+    text-transform: uppercase;
 }
 
 .heroSection .heroText h1 .bottomAnimate {
