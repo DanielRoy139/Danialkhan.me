@@ -1048,3 +1048,16 @@ button.btn-close {
   transform: translateY(0);
   opacity: 1;
 }
+
+.topAnimate {
+  position: relative;
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.topAnimate.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
