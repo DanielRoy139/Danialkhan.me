@@ -381,6 +381,7 @@ header::-webkit-scrollbar-thumb:hover {
     animation-duration: 1s;
     animation-fill-mode: both;
     position:relative;
+    display:flex;
 }
 .heroSection .heroText h1 .topAnimate small {
     font-size:40px;
