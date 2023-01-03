@@ -1072,7 +1072,9 @@ button.btn-close {
     .heroSection .heroText h1 {
         font-size: 40px;
     }
-
+    .heroSection .heroText h1 .topAnimate small {
+        font-size:30px;
+    }
     .contactText {
         display: block;
     }
