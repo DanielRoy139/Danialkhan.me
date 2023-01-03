@@ -356,6 +356,40 @@ header::-webkit-scrollbar-thumb:hover {
     line-height: 56px;
 }
 
+.heroSection .heroText h1 .bottomAnimate {
+    transform: translateY(0);
+    padding-right: 15px;
+    animation: fadeInBottom;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInBottom {
+    from {
+        opacity: 0;
+        transform: translateY(-90px);
+    }
+    to { opacity: 1;   
+        transform: translateY(0px); 
+    }
+}
+.heroSection .heroText h1 .topAnimate {
+    transform: translateY(0);
+    animation: fadeInTop;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInTop {
+    from {
+        opacity: 0;
+        transform: translateY(90px);
+    }
+    to { opacity: 1;   
+        transform: translateY(0px); 
+    }
+}
+
 .heroSection .heroText h3 {
     font-size: 40px;
     color: #fff;
