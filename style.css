@@ -380,8 +380,21 @@ header::-webkit-scrollbar-thumb:hover {
     animation: fadeInTop;
     animation-duration: 1s;
     animation-fill-mode: both;
+    position:relative;
 }
-
+.heroSection .heroText h1 .topAnimate small {
+    font-size:40px;
+}
+.heroSection .heroText h1 .topAnimate::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #ff9900;
+    position: absolute;
+    bottom: 23px;
+    left: -18px;
+    border-radius: 50%;
+}
 @keyframes fadeInTop {
     from {
         opacity: 0;
