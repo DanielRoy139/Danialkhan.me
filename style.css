@@ -1087,4 +1087,10 @@ button.btn-close {
     .heroSection {
         background-position: 80%;
     }
+    .heroSection .heroText h1 .topAnimate::after {
+        width: 8px;
+        height: 8px;
+        left:-14px;
+        bottom:24px;
+    }
 }
