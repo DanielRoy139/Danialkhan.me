@@ -117,7 +117,7 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
+  var reveals = document.querySelectorAll(".topAnimate");
 
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
@@ -125,9 +125,9 @@ function reveal() {
     var elementVisible = 150;
 
     if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("top");
+      reveals[i].classList.add("active");
     } else {
-      reveals[i].classList.remove("top");
+      reveals[i].classList.remove("active");
     }
   }
 }
