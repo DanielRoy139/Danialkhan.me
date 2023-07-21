@@ -286,7 +286,9 @@ header::-webkit-scrollbar-thumb:hover {
 .navigation nav.navbar ul li a.active span:first-child {
     color: #FF9900;
 }
-
+.navigation nav.navbar ul li a.active span:last-child {
+    text-decoration: underline;
+}
 .navigation nav.navbar ul li a span {
     font-size: 16px;
 }
