@@ -474,6 +474,7 @@ header::-webkit-scrollbar-thumb:hover {
 .aboutDetail ul {
     padding: 0;
     list-style: none;
+    margin: 0;
 }
 
 .aboutDetail ul li {
