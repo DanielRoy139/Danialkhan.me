@@ -779,51 +779,16 @@ section.portfolioSection .portfolioImg:hover .bgOverlay {
 }
 
 /* service section  */
-.serviceCard {
-    display: flex;
+.serviceImg {
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
-.serviceCard:hover .serviceIcon i {
-    color: #ff9900;
-    background: #fff;
-    border: 1px solid #ff9900;
+.serviceImg img {
+    width: 100%;
+    object-fit: cover;
 }
-
-.serviceCard .serviceIcon {
-    padding-right: 30px;
-    padding-bottom: 10px;
-}
-
-.serviceCard .serviceIcon i {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #ff9900;
-    border: 1px solid #ff9900;
-    transition: .3s;
-    color: #fff;
-    border-radius: 50px;
-    font-size: 22px;
-}
-
-.serviceCard .serviceTxt a {
-    text-decoration: none;
-    font-family: 'Poppins';
-    color: #000;
-}
-
-.serviceCard .serviceTxt a h3 {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.serviceCard .serviceTxt p {
-    padding-top: 10px;
-    font-size: 16px;
-}
-
 /* contact section  */
 section.contactSection {
     background: #f5f8fd;
