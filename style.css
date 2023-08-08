@@ -1036,7 +1036,9 @@ button.btn-close {
     }
     body .heroSection {
         background-image: url(./hero-bg-1.jpg);
-        background-position: inherit;
+        background-attachment: fixed;
+        background-position: top center;
+        height: 100vh;
     }
     .heroSection .heroText h1 {
         font-size: 40px;
