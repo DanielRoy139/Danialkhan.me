@@ -1040,6 +1040,9 @@ button.btn-close {
         background-position: top center;
         height: 100vh;
     }
+    .heroSection .heroText {
+        padding-left: 50px;
+    }
     .heroSection .heroText h1 {
         font-size: 40px;
     }
