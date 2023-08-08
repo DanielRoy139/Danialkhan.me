@@ -322,9 +322,9 @@ header::-webkit-scrollbar-thumb:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
     position: relative;
     margin-left: 300px;
+    padding: 100px 0;
 }
 
 .heroSection:before {
