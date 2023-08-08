@@ -315,15 +315,14 @@ header::-webkit-scrollbar-thumb:hover {
 
 /* hero section  */
 .heroSection {
-    display: flex;
+   display: flex;
     align-items: center;
     flex-direction: row;
     background-image: url(./hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: center;
     height: 100vh;
-    background-attachment: fixed;
     position: relative;
     margin-left: 300px;
 }
