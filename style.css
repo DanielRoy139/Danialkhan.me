@@ -569,14 +569,14 @@ svg.radial-progress circle {
 }
 
 svg.radial-progress circle.bar-static {
-    stroke: #fff
+    stroke: #d3d3d396;
 }
 
 svg.radial-progress circle.bar--animated {
     stroke-dasharray: 219.91148575129;
     stroke: #f90;
     stroke-dashoffset: 219.91148575129;
-    stroke-width: 5px;
+    stroke-width: 10px;
 }
 
 svg.radial-progress text.countervalue {
