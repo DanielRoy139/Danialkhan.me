@@ -969,9 +969,10 @@ button.btn-close {
         width: 0;
         padding: 0;
         transition: .3s;
+    }
+    .heroSection {
         margin-left:0;
     }
-
     .leftSpace {
         margin-left: 0;
     }
