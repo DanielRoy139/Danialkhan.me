@@ -484,6 +484,14 @@ header::-webkit-scrollbar-thumb:hover {
 .aboutDetail ul li::before {
     display: none;
 }
+.aboutDetail ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.aboutDetail ul li a span {
+    font-family: 'Poppins' !important;
+}
 .aboutDetail ul li span:first-child {
     color: #ff9900;
     padding-right: 5px;
