@@ -68,6 +68,7 @@ a.ScrollUpWrap {
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    box-shadow: 0 0px 10px 0px rgba(0,0,0,0.5);
 }
 
 a.ScrollUpWrap .scrollUpArrow {
