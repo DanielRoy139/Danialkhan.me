@@ -1051,10 +1051,11 @@ button.btn-close {
         height: 2rem !important;
     }
     body .heroSection {
-        background-image: url(./portfolio.jpg);
+/*         background-image: url(./portfolio.jpg);
         background-attachment: fixed;
         background-position: top center;
-        height: 100vh;
+        height: 100vh; */
+        padding-top: 150px;
     }
     .heroSection .heroText {
         padding-left: 50px;
