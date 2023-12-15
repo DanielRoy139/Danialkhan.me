@@ -328,16 +328,6 @@ header::-webkit-scrollbar-thumb:hover {
     padding: 100px 0;
 }
 
-.heroSection:before {
-    content: "";
-    background: rgba(5, 13, 24, 0.3);
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-}
-
 .heroSection .heroText {
     position: relative;
     padding-left: 100px;
