@@ -545,7 +545,8 @@ header::-webkit-scrollbar-thumb:hover {
 }
 
 section.skillSection {
-    background: #f5f8fd;
+   background: #f5f8fd;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 ul {
     list-style: none;
@@ -575,6 +576,8 @@ svg.radial-progress {
     padding: 0;
     transform: rotate(-90deg);
     width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 50%;
 }
 
 svg.radial-progress circle {
