@@ -995,7 +995,11 @@ button.btn-close {
     .navigationBtn {
         display: block;
     }
-
+    
+   .heroLogo {
+        display:block;
+    }
+    
     footer {
         position: inherit;
         width: 100%;
@@ -1026,9 +1030,7 @@ button.btn-close {
     .aboutDetail ul {
         margin:0;
     }
-    .heroLogo {
-        display:block;
-    }
+ 
     .formLeft {
         padding:30px 10px 5px;
     }
