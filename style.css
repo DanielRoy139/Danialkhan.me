@@ -976,21 +976,21 @@ button.btn-close {
     transform: scale(1, 1);
 }
 
-.screenModalLabel .modal-header div.modal-title {
+.screenModal .modal-header div.modal-title {
     width: 100%;
     max-width: 140px;
 }
 
-.screenModalLabel .modal-header div.modal-title img {
+.screenModal .modal-header div.modal-title img {
     width: 100%;
 }
 
-.screenModalLabel .modal-content .modal-header {
+.screenModal .modal-content .modal-header {
     padding: 0 10px;
     border: none;
 }
 
-.screenModalLabel .modal-content .modal-header button.btn-close {
+.screenModal .modal-content .modal-header button.btn-close {
     position: absolute;
     right: 8px;
     top: 8px;
@@ -1005,7 +1005,7 @@ button.btn-close {
     box-shadow: none;
 }
 
-.screenModalLabel .modal-content .modal-body p {
+.screenModal .modal-content .modal-body p {
     margin: 0;
     font-size: 20px;
     text-align: center;
@@ -1016,21 +1016,21 @@ button.btn-close {
     color: #fff;
 }
 
-.screenModalLabel .modal-content .modal-body {
+.screenModal .modal-content .modal-body {
     padding: 10px;
 }
 
-.screenModalLabel .modal-content .modal-footer {
+.screenModal .modal-content .modal-footer {
     border: none;
     padding: 10px;
 }
 
-.screenModalLabel .modal-content .modal-footer button.btn.btn-secondary {
+.screenModal .modal-content .modal-footer button.btn.btn-secondary {
     background: #ff9900;
     border-color: #ff9900;
 }
 
-.screenModalLabel .modal-content .modal-footer button.btn.btn-secondary:hover {
+.screenModal .modal-content .modal-footer button.btn.btn-secondary:hover {
     color: #ff9900;
     background-color: transparent;
 }
