@@ -868,6 +868,9 @@ section.contactSection form .form-control {
     font-family: 'Poppins';
     border-radius: 0;
 }
+section.contactSection form .invalid-feedback {
+    text-transform: capitalize;
+}
 input:-internal-autofill-selected {
     background-color: white !important;
 }
