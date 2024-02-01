@@ -976,6 +976,10 @@ button.btn-close {
     transform: scale(1, 1);
 }
 
+.screenModal.show .modal-dialog {
+    max-width: 35%;
+}
+
 .screenModal .modal-header div.modal-title {
     width: 100%;
     max-width: 140px;
@@ -984,7 +988,9 @@ button.btn-close {
 .screenModal .modal-header div.modal-title img {
     width: 100%;
 }
-
+.screenModal .modal-content {
+    background-color: #fff;
+}
 .screenModal .modal-content .modal-header {
     padding: 0 10px;
     border: none;
