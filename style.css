@@ -978,6 +978,9 @@ button.btn-close {
 
 .screenModal.show .modal-dialog {
     max-width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .screenModal .modal-header div.modal-title {
