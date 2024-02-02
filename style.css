@@ -449,6 +449,13 @@ header::-webkit-scrollbar-thumb:hover {
 /* main section  */
 .section-Img {
     position: relative;
+    width: 100%;
+    height: 430px;
+}
+
+.section-Img img {
+    width:100%;
+    height:100%;
 }
 
 .section-Img::before {
