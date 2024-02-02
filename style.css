@@ -1013,6 +1013,14 @@ button.btn-close {
     align-items: center;
     justify-content: center;
     box-shadow: none;
+    transition: .3s;
+    border-left: 1px solid #ff9900;
+    border-bottom: 1px solid #ff9900;
+}
+
+.screenModal .modal-content .modal-header button.btn-close:hover {
+    background: transparent;
+    color: #ff9900;
 }
 
 .screenModal .modal-content .modal-body p {
