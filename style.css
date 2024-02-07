@@ -825,6 +825,20 @@ section.serviceSection .slick-list.draggable {
     padding: 15px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+#slickImages .slick-dots li::before {
+    display: none;
+}
+
+#slickImages .slick-dots li button::before {
+    font-size: 12px;
+    opacity: 1;
+}
+
+#slickImages .slick-dots li.slick-active button::before {
+    color: #ff9900;
+    font-size: 16px;
+}
 /* contact section  */
 section.contactSection {
     background: #f5f8fd;
