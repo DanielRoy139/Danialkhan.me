@@ -805,7 +805,7 @@ section.portfolioSection .portfolioImg:hover .bgOverlay {
 
 /* service section  */
 .serviceImg.slick-slide {
-       display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
 }
