@@ -1182,3 +1182,36 @@ button.btn-close {
     }
 }
 
+.banner-btn-wrap {
+    display: flex;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.banner-btn-wrap a.btn.customBtn {
+    background: #FF9900;
+    border-color: #FF9900;
+    border-radius: 0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.banner-btn-wrap a.btn.customBtn:hover {
+    background: transparent;
+    color: #FF9900;
+    padding: 6px 15px;
+}
+
+.banner-btn-wrap a.btn.customBtn.customLight-btn {
+    background: transparent;
+    color: #FF9900;
+}
+
+.banner-btn-wrap a.btn.customBtn.customLight-btn:hover {
+    background: #FF9900;
+    color: #fff;
+}
