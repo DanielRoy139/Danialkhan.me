@@ -327,7 +327,7 @@ header::-webkit-scrollbar-thumb:hover {
    display: flex;
     align-items: center;
     flex-direction: row;
-    background-image: url(./hero-bg_2.jpg);
+    background-image: url(./hero-bg_2.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
