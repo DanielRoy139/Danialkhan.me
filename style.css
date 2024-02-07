@@ -804,10 +804,13 @@ section.portfolioSection .portfolioImg:hover .bgOverlay {
 }
 
 /* service section  */
+section.serviceSection .slick-list.draggable {
+    overflow: inherit;
+}
 .serviceImg.slick-slide {
     display: flex !important;
-    align-items: center;
     justify-content: center;
+    height:200px;
 }
 .serviceImg {
     width: 50%;
@@ -819,6 +822,8 @@ section.portfolioSection .portfolioImg:hover .bgOverlay {
     width: 100%;
     object-fit: cover;
     max-width: 200px;
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 /* contact section  */
 section.contactSection {
