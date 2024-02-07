@@ -831,7 +831,7 @@ section.serviceSection .slick-list.draggable {
 }
 
 #slickImages .slick-dots li button::before {
-    font-size: 12px;
+    font-size: 8px;
     opacity: 1;
 }
 
