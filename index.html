@@ -786,29 +786,22 @@
                             </div>
                         </div>
                         <div class="row mt-5 justify-content-center">
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="serviceImg">
-                                    <img src="./html5.png">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="serviceImg">
-                                    <img src="./css.png">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="serviceImg">
-                                    <img src="./JavaScript-Logo.png">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="serviceImg">
-                                    <img src="./bootstrap.png">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="serviceImg">
-                                    <img src="./jquery.png">
+                                <div id="slickImages">
+                                    <div class="serviceImg">
+                                        <img src="./html5.png">
+                                    </div>
+                                    <div class="serviceImg">
+                                        <img src="./css.png">
+                                    </div>
+                                    <div class="serviceImg">
+                                        <img src="./JavaScript-Logo.png">
+                                    </div>
+                                    <div class="serviceImg">
+                                        <img src="./bootstrap.png">
+                                    </div>
+                                    <div class="serviceImg">
+                                        <img src="./jquery.png">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1352,6 +1345,11 @@
         </div>
       </div>                
     <script>
+        $('#slickImages').slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 3
+        });
         $(document).ready(function(){
             $('#screenModal').modal('show');
         })
