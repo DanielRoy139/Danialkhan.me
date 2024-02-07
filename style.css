@@ -804,6 +804,9 @@ section.portfolioSection .portfolioImg:hover .bgOverlay {
 }
 
 /* service section  */
+.serviceImg.slick-slide {
+    width: 200px !important;
+}
 .serviceImg {
     width: 50%;
     margin: 0 auto;
