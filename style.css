@@ -805,7 +805,9 @@ section.portfolioSection .portfolioImg:hover .bgOverlay {
 
 /* service section  */
 .serviceImg.slick-slide {
-    width: 200px !important;
+       display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .serviceImg {
     width: 50%;
@@ -816,6 +818,7 @@ section.portfolioSection .portfolioImg:hover .bgOverlay {
 .serviceImg img {
     width: 100%;
     object-fit: cover;
+    max-width: 200px;
 }
 /* contact section  */
 section.contactSection {
