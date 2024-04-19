@@ -137,6 +137,10 @@ a.ScrollUpWrap .scrollUpText {
     line-height: 30px;
 }
 
+.section-title ul.skill-List {
+    margin: 0;
+}
+
 header {
     position: fixed;
     top: 0;
