@@ -750,68 +750,13 @@ section.portfolioSection .portfolioImg img {
     object-fit: cover;
 }
 
-section.portfolioSection .portfolioImg .profolioOverlay {
-    background: #ff9929;
-    left: 0;
-    right: 0;
-    z-index: 3;
-    position: absolute;
-    transition: all ease-in-out 0.3s;
-    display: flex;
-    justify-content: center;
-    transform: translateY(20px);
-    opacity: 0;
+section.portfolioSection .portfolioImg:hover {
+     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-section.portfolioSection .portfolioImg:hover .profolioOverlay {
-    opacity: 1;
-    transform: translateY(-20px);
-}
-
-section.portfolioSection .portfolioImg .profolioOverlay button.portfolioBtn {
-    width: 49%;
-    border: none;
-    background: #ff9929;
-    padding: 10px 0px;
-    font-size: 20px;
-    border-right: 1px solid #d1c1c1;
-    transition: all ease-in-out 0.3s;
-}
-
-section.portfolioSection .portfolioImg .profolioOverlay button.portfolioBtn:hover {
-    color: #fff;
-}
-
-section.portfolioSection .portfolioImg .profolioOverlay button.portfolioBtn:last-child {
-    border: none;
-}
-
-section.portfolioSection ul.nav-tabs li button.nav-link {
-    color: #000;
-    font-family: 'Poppins';
-    font-weight: 500;
-    transition: all 0.3s ease-in-out;
-    font-size: 14px;
-}
-
-section.portfolioSection .portfolioImg .bgOverlay {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: black;
-    transition: all 0.3s ease-in-out;
-    opacity: 0;
-}
-
-section.portfolioSection .portfolioImg:hover .bgOverlay {
-    opacity: 0.5;
-}
-
-.tab-content>.active .portfolioImg {
-    animation: zoom-in 1s ease;
-    transform: scale(1, 1);
+section.portfolioSection .portfolioImg:hover img {
+    transform: scale(1.1);
+   
 }
 
 /* service section  */
