@@ -713,6 +713,7 @@ svg.radial-progress text.countervalue {
 /* portfolio section  */
 section.portfolioSection {
     background: #f5f8fd;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 section.portfolioSection ul.nav-tabs {
