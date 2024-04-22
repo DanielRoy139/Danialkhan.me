@@ -742,12 +742,14 @@ section.portfolioSection ul.nav-tabs li button:hover {
 
 section.portfolioSection .portfolioImg {
     position: relative;
+    overflow:hidden;
 }
 
 section.portfolioSection .portfolioImg img {
     width: 100%;
     height: 180px;
     object-fit: cover;
+    transition:.3s;
 }
 
 section.portfolioSection .portfolioImg:hover {
