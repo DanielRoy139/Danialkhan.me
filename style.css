@@ -1222,6 +1222,11 @@ button.btn-close {
     border-radius: 4px;
 }
 
+.banner-btn-wrap a.btn.customBtn:hover::before {
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
 .banner-btn-wrap a.btn.customBtn span {
     position: relative;
     z-index: 1;
