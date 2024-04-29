@@ -1173,26 +1173,67 @@ button.btn-close {
 }
 
 .banner-btn-wrap a.btn.customBtn {
-    background: #FF9900;
-    border-color: #FF9900;
-    border-radius: 0;
+    appearance: none;
+    background-color: #ff9900;
+    border-width: 0;
+    box-sizing: border-box;
     color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Clarkson, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 0;
+    opacity: 1;
+    outline: 0;
+    padding: 16px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1), background-color 100ms cubic-bezier(.694, 0, 0.335, 1), color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+    border-radius: 6px;
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 16px;
-    transition: .3s;
 }
 
-.banner-btn-wrap a.btn.customBtn:hover {
-    background: transparent;
-    color: #FF9900;
-    padding: 6px 15px;
+.banner-btn-wrap a.btn.customBtn::before {
+    animation: opacityFallbackOut .5s step-end forwards;
+    backface-visibility: hidden;
+    background-color: #000;
+    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+    width: 100%;
+    border-radius: 4px;
+}
+
+.banner-btn-wrap a.btn.customBtn span {
+    position: relative;
+    z-index: 1;
+}
+
+.banner-btn-wrap a.btn.customBtn::after {
+    background-color: #FFFFFF;
 }
 
 .banner-btn-wrap a.btn.customBtn.customLight-btn {
-    background: transparent;
-    color: #FF9900;
+    background: #000;
+    color: #fff;
 }
 
 .banner-btn-wrap a.btn.customBtn.customLight-btn:hover {
