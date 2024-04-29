@@ -1150,10 +1150,26 @@ button.btn-close {
     .heroSection .heroText h1 .topAnimate small {
         font-size:25px;
     }
-    .contactText {
-        display: block;
-    }
+    .contactText .contactIcon i {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+}
 
+.contactText .contactIcon {
+    padding-right: 10px;
+}
+
+.contactText .contactMedia h5 {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+.contactText .contactMedia h3 {
+    font-size: 15px;
+}
     .serviceCard {
         display: block;
     }
