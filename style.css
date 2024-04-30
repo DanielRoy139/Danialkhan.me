@@ -801,7 +801,7 @@ section.contactSection {
 }
 .formLeft {
 background: url(./portfolio.jpg);
-    padding: 100px 10px;
+    padding: 30px 10px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -816,6 +816,20 @@ background: url(./portfolio.jpg);
     right: 0;
     bottom: 0;
 }
+
+.formLeft .contactTop {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 30px;
+}
+
+.formLeft .contactTop h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Poppins';
+}
+
 .contactText {
     display: flex;
     flex-wrap: wrap;
