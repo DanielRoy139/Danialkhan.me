@@ -1197,6 +1197,19 @@ button.btn-close {
     display: flex;
     gap: 15px;
     padding-top: 20px;
+    animation: btnAnimate;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    transform: translateX(0px);
+}
+
+@keyframes btnAnimate {
+    0% {
+        transform: translateX(-100px);
+    }
+     100% {
+        transform: translateX(0px);
+    }
 }
 
 .banner-btn-wrap a.btn.customBtn {
