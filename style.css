@@ -326,10 +326,6 @@ header::-webkit-scrollbar-thumb:hover {
     width: 30px;
 }
 
-.navigation nav.navbar ul li a:hover span:first-child {
-    color: #FF9900;
-}
-
 .navigation nav.navbar ul li a:hover span {
     color: #fff;
 }
