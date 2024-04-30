@@ -836,7 +836,7 @@ background: url(./portfolio.jpg);
     margin-bottom: 20px;
     position: relative;
     z-index: 1;
-    gap:15px;
+    gap:10px;
 }
 
 .contactText .contactIcon i {
@@ -1194,10 +1194,6 @@ button.btn-close {
     width: 40px;
     height: 40px;
     font-size: 16px;
-}
-
-.contactText .contactIcon {
-    padding-right: 10px;
 }
 
 .contactText .contactMedia h5 {
