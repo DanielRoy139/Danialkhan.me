@@ -804,13 +804,28 @@ section.contactSection {
     padding: 0px;
 }
 .formLeft {
-    background: #ff9900;
+background: url(./portfolio.jpg);
     padding: 100px 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.formLeft::after {
+    content: '';
+    background: #ff9900ad;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
 .contactText {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .contactText .contactIcon {
