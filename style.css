@@ -852,6 +852,10 @@ background: url(./portfolio.jpg);
     font-family: 'Poppins';
     color: #fff;
 }
+.contactText .contactMedia h3 a {
+    text-decoration: none;
+    color: #fff;
+}
 .formRight {
     padding: 60px 15px;
     background: #000;
