@@ -826,25 +826,27 @@ background: url(./portfolio.jpg);
 }
 
 .contactText .contactIcon i {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background: #000;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50px;
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .contactText .contactMedia h5 {
-    font-size: 18px;
+    font-size: 17px;
     font-family: 'Poppins';
     color: #fff;
+    margin: 0;
+    padding-bottom: 5px;
 }
 
 .contactText .contactMedia h3 {
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Poppins';
     color: #fff;
 }
