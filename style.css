@@ -931,38 +931,6 @@ section.contactSection form .submitBtn:hover {
     background-color: #000;
 }
 
-.allFieldsError .allFieldsText {
-    text-align: center;
-}
-
-.allFieldsError .allFieldsText p {
-    margin: 0;
-    color: #fff;
-    text-align: center;
-    display: inline-block;
-    padding: 10px 30px;
-}
-
-div.allFieldsError {
-    display: none;
-}
-
-div.allFieldsError.allFieldsErrorShow {
-    display: block;
-    animation: ErrorTop;
-    animation-duration: 1s;
-    transform:translateY(0);
-}
-
-@keyframes ErrorTop {
-    0% {
-        transform:translateY(20px);
-    }
-    100% {
-        transform:translateY(0px);
-    }
-}
-
 /* footer section  */
 footer {
     background: #000;
