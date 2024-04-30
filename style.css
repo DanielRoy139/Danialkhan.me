@@ -855,7 +855,20 @@ background: url(./portfolio.jpg);
 .formRight {
     padding: 60px 15px;
     background: #000;
+    position: relative;
 }
+
+.formRight::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 16px solid transparent;
+    border-right: 20px solid #000;
+    border-bottom: 16px solid transparent;
+    position: absolute;
+    left: -20px;
+}
+
 .formRight .formText h2 {
     color: #fff;
     font-family: 'Poppins';
