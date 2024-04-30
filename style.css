@@ -100,7 +100,7 @@ a.ScrollUpWrap .scrollUpText {
 .navigationBtn button.navBtn {
     position: fixed;
     right: 20px;
-    z-index: 2;
+    z-index: 3;
     top: 20px;
     width: 40px;
     height: 40px;
@@ -350,7 +350,7 @@ header::-webkit-scrollbar-thumb:hover {
 }
 .heroLogo {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: -60px;
     left: 0;
     width: 100%;
