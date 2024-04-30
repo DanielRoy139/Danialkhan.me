@@ -826,11 +826,7 @@ background: url(./portfolio.jpg);
     margin-bottom: 20px;
     position: relative;
     z-index: 1;
-}
-
-.contactText .contactIcon {
-    padding-right: 30px;
-    padding-bottom: 10px;
+    gap:15px;
 }
 
 .contactText .contactIcon i {
