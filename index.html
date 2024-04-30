@@ -543,6 +543,13 @@
                                         <input class="btn btn-primary submitBtn" id="submit-btn" type="submit"
                                             value="SEND MESSAGE" />
                                     </div>
+                                    <div class="col-md-12">
+                                        <div class="allFieldsError" id="allFieldsError">
+                                            <div class="allFieldsText">
+                                                <p>All Fields Are Required!</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -660,7 +667,7 @@
             'use strict';
             // Fetch all the forms we want to apply custom Bootstrap validation styles to
             const forms = document.querySelectorAll('.needs-validation');
-
+            const FieldsError = document.getElementById('allFieldsError');
             // Loop over them and prevent submission
             Array.prototype.slice.call(forms).forEach((form) => {
                 form.addEventListener('submit', (event) => {
@@ -669,6 +676,7 @@
                         event.stopPropagation();
                     }
                     form.classList.add('was-validated');
+                    FieldsError.classList.add('allFieldsErrorShow');
                 }, false);
             });
         })();
