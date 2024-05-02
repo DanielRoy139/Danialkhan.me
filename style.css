@@ -524,6 +524,10 @@ header::-webkit-scrollbar-thumb:hover {
     font-family: 'Poppins';
 }
 
+.aboutDetail ul li span:last-child {
+    font-size: 14px;
+}
+
 .counterWrapper {
     display: flex;
 }
